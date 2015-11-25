@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<?php 
+session_start(); 
+?>
+
 <html >
   <head>
     <meta charset="UTF-8">
@@ -21,9 +26,9 @@
 		<h1>Bienvenue</h1>
 		
 		<form class="form">
-			<input type="text" placeholder="Identifiant">
-			<input type="password" placeholder="Mots de passe">
-			<button type="submit" id="login-button">Connection</button>
+			<input type="text" name="identifiant" placeholder="Identifiant">
+			<input type="password" name="mot_de_passe" placeholder="Mots de passe">
+			<button type="submit" id="login-button">Connexion</button>
 		</form>
 	</div>
 	
