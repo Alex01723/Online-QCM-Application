@@ -37,8 +37,8 @@ print("Question n°" . $numeroQuestion);
             <input type="radio" name="bonnereponse4_<?php echo $numeroQuestion ?>" required>
         </td>
     </tr>
-    //reponse[x]_[id] donne la chaine de caractère de la réponse x à la question id
-    //bonnereponse[x]_[id] si x est vraie, alors la reponse x est la bonne réponse a la question id
+    <!-- //reponse[x]_[id] donne la chaine de caractère de la réponse x à la question id
+     //bonnereponse[x]_[id] si x est vraie, alors la reponse x est la bonne réponse a la question id -->
     </tbody>
 </table>
 
