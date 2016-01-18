@@ -1,6 +1,4 @@
-
-<!DOCTYPE html>
-<html >
+<html>
 <head>
     <meta charset="UTF-8">
     <title>QCM</title>
@@ -12,4 +10,4 @@
 <div class="wrapper">
     <div class="container">
         <img src="logo-lyon1.png"/>
-</body>
+ 

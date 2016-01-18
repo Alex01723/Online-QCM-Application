@@ -13,7 +13,7 @@ include("header.php"); ?>
 </form>
 
 
-<form method="post" action="index.php">
+<form method="post" action="logout.php">
 	<button type="submit" />Déconnexion</button>
 </form>
 	<ul class="bg-bubbles">
