@@ -44,7 +44,9 @@ $res = $mysqli-> query("SELECT distinct id,titre, idGroupe, date FROM QCM");
 		</table>
 
     </div>
-
+<form method="post" style="text-align:center;" action="menu.php">
+	<button type="submit" />Menu</button>
+</form>
 	<ul class="bg-bubbles">
 		<li></li>
 		<li></li>

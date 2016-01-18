@@ -13,7 +13,9 @@ $nbr = $req->fetchColumn();
 ?>
 <div class="wrapper">
     <div class="container">
-
+<form method="post" style="text-align:center;" action="menu.php">
+  <button type="submit" />Menu</button>
+</form>
       <section>
         <h1>&nbsp;Relevé de notes :&nbsp;</h1>
 
@@ -33,7 +35,6 @@ $nbr = $req->fetchColumn();
         <div  class="tbl-content">
          <table style="width:100%" cellpadding="0" cellspacing="0" border="0">
            <tbody>
-
 <?php
 $ligne=0;
 while($line = $req2->fetch(PDO::FETCH_ASSOC)){
