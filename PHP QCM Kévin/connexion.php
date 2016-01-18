@@ -1,16 +1,16 @@
 <?php
-if(isset($_POST['couriel'],$_POST['mdp'])){ 
+if(isset($_POST['courriel'],$_POST['mdp'])){ 
 // Hachage du mot de passe
 //$pass_hache = sha1($_POST['pass']);
-  $couriel=$_POST['couriel'];
+  $courriel=$_POST['courriel'];
   $mdp=$_POST['mdp'];
 
 $bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', 'root');
 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 // Vérification des identifiants
-$req = $bdd->prepare('SELECT id FROM utilisateur WHERE couriel = :couriel AND mdp = :mdp');
+$req = $bdd->prepare('SELECT id FROM utilisateur WHERE courriel = :courriel AND mdp = :mdp');
 $req->execute(array(
-    'couriel' => $couriel,
+    'courriel' => $courriel,
     'mdp' => $mdp));
 
 $resultat = $req->fetch();
@@ -24,7 +24,7 @@ else
 {
     session_start();
     $_SESSION['id'] = $resultat['id'];
-    $_SESSION['couriel'] = $couriel;
+    $_SESSION['courriel'] = $courriel;
     header("Location:menu.php");
 }
 }
